@@ -1,0 +1,820 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Page Title</title>
+    <style>
+      * {margin: 0;box-sizing: border-box }
+
+      ul,ol,li {list-style: none; margin:0; padding:0;}
+
+      header {
+        width: 100%;
+        height: 270px;
+        margin: 0 auto;
+        
+      }
+
+      #wrap {
+        width: 1260px;
+        height: 40px;
+        
+        margin:0 auto;
+      }
+
+      #login {
+        width: 400px;
+        height: 40px;
+        float: left;
+        display: block;
+      }
+
+      #login> ul a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #login> ul>li {
+        float: left;
+        font-size: 14px;
+        margin: 5px 0 2px 0;
+      }
+
+      #comunity {
+        width: 400px;
+        height: 40px;
+        float:right;
+
+      }
+      #comunity > ul > li {
+        float: right;
+        font-size: 14px;
+        margin: 5px 0 2px 0;
+      }
+      #comunity > ul >li > a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #header-middle{width:1260px; height:110px; margin:0 auto;}
+
+
+      #logo {
+        width: 110px;
+        height: 110px;
+        margin: 50px 350px 0px 500px;
+      }
+
+
+      #search {
+        width: 220px;
+        height: 28px;
+        float: right;
+        margin: -120px 20px 0px 0;
+        border-radius: 20px;
+        border:1px solid #eee;
+        background-color:lightgrey
+      }
+
+      #search > a >img {
+        float: right;
+        margin: 10px 20px 10px 10px;
+      }
+
+      #header-nav {width: 100%; height: 55px;  margin:0 auto; border-bottom:1px solid #eee; border-top:1px solid #eee;}
+
+
+      #header-nav > nav > ul {width:1260px; height:30px; margin:0 auto; padding:0px; }
+
+      #header-nav > nav > ul > li {
+        float:left;
+        font-size: 14px;
+        margin: 10px 25px;
+        }
+
+        #header-nav > nav > ul > li > a {
+        text-decoration: none;
+        color: black; 
+      }
+
+      #header-nav > nav > ul > li >a:hover {
+        color: beige;
+      }
+
+      #slider {
+        width: 1980px;
+        height: 1150px;
+        margin: 0 auto;
+      }
+
+
+
+      #imgbox1 {
+        width: 500px;
+        height: 580px;
+        float: left;
+        margin: 0 150px 0 150px;
+      }
+
+      #imgbox2 {
+        width: 500px;
+        height: 580px;
+        float: left;
+        margin: 0 150px 0 150px;
+      }
+
+      #sale {width:1261px; height:415px; float:left; margin: 50px 250px 20px 300px;}
+      article {width:407px; height:415px; float:left; background-color:blue; margin:0 10px 0 0;}
+
+
+
+      section {
+        width: 1689px;
+        height: 3800px;
+        
+        margin: 0 auto;
+      }
+      
+      /*섹션 1 부분:추천 상품*/
+
+      #recommand {width:100%; height:1600px; float:left; }
+      #recommand > h3 {width:100%; height:51px; text-align:center; margin:40px 0 10px 0;}
+      #recommand > a > img {width:1960px; height:280px;  margin:30px 0px 0 10px;}
+      #recommand > p {text-align:center; font-size:12px; }
+
+      #rec-boxtop{width:1260px; height:1227px; margin: 10px 151px 0 151px;  margin:130px 0 20px 300px;}
+
+      .rec-box{width:300px; height:500px; float:left; padding:20px;}
+      
+      #rec-boxtop > .rec-box:first-of-type{margin:6px;}
+      #rec-boxtop > .rec-box:nth-of-type(2){margin:6px;}
+      #rec-boxtop > .rec-box:nth-of-type(3){margin:6px;}
+      #rec-boxtop > .rec-box:nth-of-type(4){margin:6px;}
+      #rec-boxtop > .rec-box:nth-of-type(5){margin:6px;}
+      #rec-boxtop > .rec-box:nth-of-type(6){margin:6px;}
+      #rec-boxtop > .rec-box:nth-of-type(7){margin:6px;}
+      #rec-boxtop > .rec-box:last-of-type{margin:6px;}
+      
+      
+      .moving1 {width:300px; height:300px; overflow:hidden;}
+      .moving1 > a > img {width:300px; height:300px; transform: (1);  transition:all 0.3s ease-in-out;}
+      .moving1 > a > img:hover {cursor:pointer; transform:scale(1.2);}
+       
+      .rec-box > h5 {width:234px; height:40px; padding: 10px; }
+      .rec-box > h5 > a {text-decoration:none; color: black; }
+      .rec-box > hr {opacity:0.3;}
+      .rec-box > h6 {width:260px; height:40px; padding: 7px;  font-size:12px; margin:-20px 0 0 0px} 
+      .rec-box > p{width:234px; height:30px; padding: 10px;font-size:12px; display:block;}
+      
+      .rec-box > p:after{content:"1"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+      .rec-box:nth-of-type(3) > p:after {content:"3"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+      .rec-box:nth-of-type(5) > p:after {content:"5"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+
+      .rec-box > span {font-size:10px; font-weight:300px; height:18px; background-color:gold; padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+      
+      /*섹션 2부분: 인기품목*/
+
+      #hot {width:100%; height:2000px; float:left; }
+      #hot > a >img {width:1960px; height:300px; margin:200px 0 10px 20px;}
+      #hot > h3 {text-align:center; font-size:15px;  margin:20px 0 10px 0;}
+      #hot > p {text-align:center; font-size:8px;}
+
+
+      #boxtop {width:1260px; height:1027px; margin: 10px 151px 0 151px; margin:130px 0 20px 300px;}
+
+      .box1 {width:300px; height:477px;  float:left; padding:20px; }
+
+      #boxtop > .box1:first-of-type{margin:6px;}
+      #boxtop > .box1:nth-of-type(2){margin:6px;}
+      #boxtop > .box1:nth-of-type(3){margin:6px;}
+      #boxtop > .box1:nth-of-type(4){margin:6px;}
+      #boxtop > .box1:nth-of-type(5){margin:6px;}
+      #boxtop > .box1:nth-of-type(6){margin:6px;}
+      #boxtop > .box1:nth-of-type(7){margin:6px;}
+      #boxtop > .box1:last-of-type{margin:6px;}
+
+     
+      
+
+      .box1 > h5 {width:234px; height:40px; padding: 10px;}
+      .box1 > h5 > a {text-decoration:none; color:black;}
+      .box1 > hr {opacity:0.3;}
+      .box1 > h6 {width:234px; height:30px; padding: 10px; font-size:12px;}
+      .box1 > p {width:234px; height:30px; padding: 10px; font-size:12px;} 
+      .box1 > p:after{content:"1"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+     
+      .box1:first-of-type > p:after {content:"10"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+      .box1:nth-of-type(3) > p:after {content:"3"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+      .box1:nth-of-type(5) > p:after {content:"7"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+      .box1:last-of-type > p:after {content:"2"; font-size:10px; font-weight:300px; height:18px; background-color:rgb(85, 85, 85); padding:0 4px 2px 4px; border-radius:10px; text-align:center; color:white;}
+
+       
+      /*섹션 3부분: 이벤트 */
+      #event {width:100%; height:300px;  float:left;}
+      #event > a > img {width:1960px; height:300px; ; margin: 20px 0 0px 10px;}
+      
+
+      footer {
+        width: 100%;
+        height: 902px;
+        margin: 0 auto;
+      }
+      
+      /*푸터 문의부분 및 배송정보*/
+      #center {width:1260px; height:430px; float:center; padding:50px 0 50px 0; margin:0 auto; }
+      #center > .box3 {width:380px; height:330px; float:left; padding:10px; color:gray;}
+
+      #center > .box3:first-of-type{margin:10px 5px 10px 25px; }
+      #center > .box3:nth-of-type(2){margin:10px 5px 10px 25px;}
+      #center > .box3:last-of-type{margin:10px 5px 10px 25px;}
+
+      .box3:first-of-type > a  { text-decoration:none; width: 130px; height:60px; background-color:beige; text-align:center;}
+      .box3:first-of-type > a > h6 {width: 160px; height:60px; padding:20px; margin:0 10px 0 10px; float:left; background-color:gray; color:white; display:inline;}
+      
+      #minibox1 {width:317px; height:31px; background-color:lightgray; padding:10px;  margin:10px 0 10px 0;}
+      
+      #minibox2 {width:318px; height:60px; border: 1px solid #eee; padding:5px 0 5px 10px; margin:10px 0 10px 0;}
+      #minibox2 > a > img {width:40px; height:30px; float:left; margin:10px 10px 0 0;}
+      #minibox2 > h6 {margin: 10px 0 0 0;}
+
+      /*주문내역, 개인정보, 관심상품 및 쿠폰 마일리지 부분*/
+
+      .smallmenu{width:94px; height:156px; float:left; text-align:center; border:1px solid #eee;}
+      .smallmenu > a {text-decoration:none;}
+      .smallmenu > a > img {opacity: 0.3; width:32px; height:32px; text-align:center; margin:20px 10px 10px 10px;}
+      .smallmenu > h5 {margin:0px 0 10px 0px;}
+      .smallmenu > h5 > a {text-decoration:none; opacity: 0.3; color:black; font-size:10px; border:1px solid lightgrey;  padding:2px; border-radius:5px;}
+      
+      .smallmenu > h6 > a {text-decoration:none; opacity: 0.3; color:black} 
+
+
+      .box3 > .smallmenu:first-of-type {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(2) {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(3) {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(4) {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(5) {margin:10px;}
+      .box3 > .smallmenu:last-of-type {margin:10px;}
+
+      /*개인정보 처리방침*/
+
+      #footnav {width: 100%; height:20px; margin: 10px 0 10px 0; border-top:1px solid #eee; border-bottom:1px solid #eee; }
+      #footnav > ul {width:1260px;  height:20px; margin:0 auto;}
+      #footnav > ul > li { float:left; font-size:10px; margin:0 auto; }
+      #footnav > ul > li > a {text-decoration:none; color:black;}
+
+      /*회사소개 및 서비스인증내역*/
+
+      #address {width: 1260px; height:90px; margin:0 auto;}
+      #address > ul {float:left; margin:0 auto; text-align:center;}
+      #address > ul >li {float:left; font-size: 8px; }
+
+
+      #service {width:400px; height:45px; float:right; }
+      #service > h5 {font-size:7px; font-weight:bold; float:left;}
+      #service >button {font-size:7px; float:right; margin:-3px 120px 3px 0px;}
+      #service > p {font-size:5px; float:left; margin:-5px 0  5px 0;}
+      #service > #service-img {width:100px; height:45px; float:right; margin:-20px 0 0 0;}
+      #service > #service-img > a > img {width:47px; height:45px; float:left; opacity:0.4;}
+
+      #confirm {width:300px; height:30px; float:right; display:block;}
+      #confirm > a > img {float:left; width:100px; height:90%; opacity:0.4;}
+      
+      
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div id="wrap">
+
+        <div id="login">
+
+          <ul>
+
+            <li><a href="#">회원가입</a></li>
+
+            <li>ㅣ</li>
+
+            <li><a href="#">로그인</a></li>
+
+            <li>ㅣ</li>
+
+            <li><a href="#">장바구니</a></li>
+
+            <li>ㅣ</li>
+
+            <li><a href="#">주문조회</a></li>
+
+            <li>ㅣ</li>
+
+            <li><a href="#">마이페이지</a></li>
+
+            <li>ㅣ</li>
+
+          </ul>
+        </div>
+
+        <div id="comunity">
+          <ul>
+            <li>ㅣ</li>
+
+            <li><a href="#">고객센터</a></li>
+
+            <li>ㅣ</li>
+
+            <li><a href="#">커뮤니티</a></li>
+          </ul>
+
+        </div>
+
+
+
+      </div>
+
+
+      <div id="header-middle">
+        <div id="logo">
+
+          <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220406/8d60dc089c3573554663aca5de3c66ad.png"
+          alt="순수조명로고"></a>
+
+        </div>
+
+
+        <div id="search">
+          <a href="#"><img src="https://soonsumall.com/G_design/PC/btn/btn_search.png" alt="검색돋보기"></a>
+
+        </div>
+      </div>
+
+
+      <div id="header-nav">
+        <nav>
+          <ul>
+            <li><a href="#">인테리어</a></li>
+            <li><a href="#">LED전구</a></li>
+            <li><a href="#">방등</a></li>
+            <li><a href="#">거실등</a></li>
+            <li><a href="#">식탁등</a></li>
+            <li><a href="#">레일조명</a></li>
+            <li><a href="#">관 베란다</a></li>
+            <li><a href="#">욕실 베일</a></li>
+            <li><a href="#">벽등</a></li>
+            <li><a href="#">태양열조명</a></li>
+            <li><a href="#">콘텐츠 스위치</a></li>
+            <li><a href="#">전기자재</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </header>
+
+    <div id="slider">
+      <div id="imgbox1">
+        <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20210929/4776b8834f2a12ca7f6d2e02dc5b2499.jpg"
+        alt="슬라이더 이미지 1"></a>
+
+      </div>
+
+      <div id="imgbox2">
+        <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220308/0faa43eb1113016c050573c1138bf023.jpg"
+                         alt="슬라이더 이미지 2"></a>
+
+      </div>
+
+      <div id="sale">
+        <article>
+          <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220204/98bf8b1e44aae9ef37378213799866c1.jpg" alt="슬라이더밑이미지1"></a>
+        </article>
+        <article>
+          <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220204/76e911b0da9791f623c6779ead1f6844.jpg" alt="슬라이더밑이미지2"></a>
+        </article>
+        <article>
+          <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220204/af0391811ecbc9388c4eb1fff468b7a3.jpg" alt="슬라이더밑이미지3"></a>
+        </article>
+      </div>
+
+      <div id="recommand">
+        <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220208/2d6cc4c28dbc0172aa1e9b73352ab4ee.jpg" alt="추천이미지1"></a>
+        <h3>PICK</h3>
+        <p>다른 고객들도 이 상품을 보고 있어요.</p>
+
+        <div id="rec-boxtop">
+
+          <div class="rec-box">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20210909/b005f31576cd85bf55d21ed349eb484b.jpg" alt="추천상품이미지1"></a>
+          </div>
+            <h5><a href="#">마크 1등 식탁등</a></h5>
+            <hr>
+            <br>
+            <h6>북유럽 감성 인테리어를 완성하다 </h6>
+            <h6>43,000원</h6>
+            <span>NEW</span>
+           
+            
+          </div>
+          <div class="rec-box">
+            <div class="moving1">
+             <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/c790a90c6281593cbe267eeca3c71193.jpg" alt="추천상품이미지2"></a>
+            </div>
+            <h5><a href="#">리빙 1등 식탁등</a></h5>
+            <hr>
+            <br>
+            <h6>북유럽 감성 인테리어를 더한 나만의 공간</h6>
+            <h6>69,000원</h6>
+          
+          </div>
+          <div class="rec-box">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202107/bca2155561240268f5cc9133cbf8bc1e.jpg" alt="추천상품이미지3"></a>
+            </div>
+            <h5><a href="#">버블램프 1등 식탁등</a></h5>
+            <hr>
+            <br>
+            <h6>품격있는 디자인이 눈길을 사로잡다</h6>
+            <h6>70,000원</h6>
+            <p>사용후기</p>
+          </div>
+
+          <div class="rec-box">
+            <div class="moving1">
+              <a href="#"><img src="https://soonsumall.com/web/product/tiny/202201/63b428108254d2d38e759858af33f93d.jpg" alt="추천상품이미지4"></a>
+            </div>
+           <h5><a href="#">아티 1등 식탁등</a></h5>
+           <hr>
+           <br>
+           <h6>하나의 작품을 보는 듯한 인테리어조명</h6>
+           <h6>355,000원</h6>
+            
+
+          </div>
+          <div class="rec-box">
+            <div class="moving1">
+             <a href="#"><img src="https://soonsumall.com/web/product/tiny/202202/9734829149bdbc2843e9d41b2f83007f.jpg" alt="추천상품이미지5"></a>
+            </div>
+            <h5><a href="#">루이스 1등 식탁등</a></h5>
+            <hr>
+            <br>
+            <h6>하나의 작품을 보는 듯한 인테리어조명</h6>
+            <h6>355,000원
+            </h6>
+            <p>사용후기</p>
+
+          </div>
+          <div class="rec-box">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/87e0b9c5a20767d9eb2f2dc4d7e2a32a.jpg" alt="추천상품이미지6">
+            </a>
+          </div>
+            <h5><a href="#">아치 1등 식탁등</a></h5>
+            <hr>
+            <br>
+            <h6>SNS에서 반응폭발! 요즘 대세 식탁들</h6>
+            <h6>248,000원
+            </h6>
+          </div>
+          <div class="rec-box">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/43a30a3db5799984f406e0a3372c3ed4.jpg" alt="추천상품이미지7"></a>
+          </div>
+            <h5><a href="#">글로비 1등 식탁 </a></h5>
+            <hr>
+            <br>
+            <h6>시.선.집.중. 유니크한 나만의 인테리어</h6>
+            <h6>165,000원
+            </h6>
+            <span>NEW</span>
+            
+          </div>
+          <div class="rec-box">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/6df413d1a88a710df6e403864ae166e7.jpg" alt="추천상품이미지8"></a>
+          </div>
+            <h5><a href="#">클로제 LED 식탁등  30W</a></h5>
+            <hr>
+            <br>
+            <h6>계속 머물고 싶은 공간, 클로제</h6>
+            <h6>160,000원
+            </h6>
+            <p>사용후기</p>
+            <span>NEW</span>
+            
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div id="hot">
+        <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220208/d8e5c724a6fc7f68b5d50985f0deaeaf.jpg" alt="핫이미지"></a>
+        <h3>WEEKLY BEST</h3>
+        <p>한주간 인기아이템을 확인하세요.</p>
+
+
+
+        <div id="boxtop">
+
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/76b78b4b2f5f651bc218c0b54b8a1c1c.jpg" alt="핫품목이미지1"></a>
+            </div>
+            <h5><a href="#">라일라 우드 직부등</a></h5>
+            <hr>
+            
+            <h6>9,900원</h6>
+            
+            <hr>
+            
+            <h6>단독특가! 놓치면 후회할 직부등! </h6>
+            
+            <p>사용후기</p>
+
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/50a4f63804a4cd2d6e01878edd9a0c8e.jpg" alt="핫품목이미지2"></a>
+            </div>
+            <h5><a href="#">그레이스 9등 거실등 식탁등</a></h5>
+            
+            <hr>
+            
+            <h6>119,000원</h6>
+            
+            <hr>
+            
+            <h6>포인트 조명의 새로운 패러다임</h6>
+            
+            <p>사용후기</p>
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202112/36b6e17f03792e9a1e21894f0a75d7f8.jpg" alt="핫품목이미지3"></a>
+            </div>
+            <h5><a href="#">크리스탈 LED 식탁등 70W</a></h5>
+            <hr>
+            
+            <h6>230,000원</h6>
+            
+            <hr>
+            
+            <h6>공간을 압도하는 화려한 크리스탈</h6>
+            
+            <p>사용후기</p>
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202201/807aa6b3997911b3cf0782c0e0d79217.jpg" alt="핫품목이미지4"></a>
+            </div>
+            <h5><a href="#">스타워즈 센서등 직부등 겸용</a></h5>
+            
+            <hr>
+            
+            <h6>38,000원</h6>
+            
+            <hr>
+            
+            <h6>은은한 멋이 있는 고급스러운 인테리어 완성</h6>
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202111/f64712eb39e800f1d5522996ccfa5207.jpg" alt="핫품목이미지5"></a>
+            </div>
+            <h5><a href="#">LED 투링 방등 50W</a></h5>
+            
+            <hr>
+            
+            <h6>119,000원</h6>
+            
+            <hr>
+            
+            <h6>어디에 두어도 예쁜 동그라미</h6>
+            
+            <p>사용후기</p>
+
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202107/74dcd4729a4740eed029382aae9bd939.jpg" alt="핫품목이미지6"></a>
+            </div>
+            <h5><a href="#">마리내 LED 식탁등 25W</a></h5>
+            
+            <hr>
+            
+            <h6>189,000원</h6>
+            
+            <hr>
+            
+            <h6>우리집에 화려한 불꽃축제</h6>
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202107/bfe5475f2afc59a1686de46e3ac34054.jpg" alt="핫품목이미지7"></a>
+            </div>
+            <h5><a href="#">앤코 1등 식탁등[3color]</a></h5>
+            
+            <hr>
+            
+            <h6>49,000원</h6>
+            
+            <hr>
+            
+            <h6>북유럽 인테리어에 안.성.맞.춤</h6>
+          </div>
+          <div class="box1">
+            <div class="moving1">
+            <a href="#"><img src="https://soonsumall.com/web/product/tiny/202107/1feb2ab787b5e5434a77424039f755d8.jpg" alt="핫품목이미지8"></a>
+            </div>
+            <h5><a href="#">식탁등 에오스 깃털조명</a></h5>
+            
+            <hr>
+            
+            <h6>159,000원</h6>
+            <hr>
+            
+            <h6>풍성한 깃털</h6>
+            
+            <p>사용후기</p>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <div id="event">
+        <a href="#"><img src="https://soonsumall.com/web/upload/NNEditor/20220208/5f23be3c3be047377ec91782f9d89cb7.jpg" alt="이벤트사진"></a>
+       
+      </div>
+
+    </div>
+
+    <section>
+
+
+
+
+    </section>
+
+
+
+    <footer>
+      <div id="center">
+        <div class="box3">
+          <h3>CUSTOMER CENTER</h3>
+          <hr>
+          <br>
+          <h4>1811-8168</h4>
+          <h6>-평일: 10:00~ 16:00 <br>
+            -고객센터 운영시간에 순차적으로 답변드리겠습니다.<br>
+            -토요일, 일요일, 공휴일휴무<br>
+            <br> 
+            ※ 문의사항은 게시판 혹은 톡으로 남겨주세요.</h6>
+          <br>
+          <br>
+          <a href="#"><h6>문의게시판</h6></a>
+          <a href="#"><h6>자주 묻는 질문</h6></a>
+
+        </div>
+        <div class="box3">
+          <h3>OTHER INFORMTION</h3>
+          <hr>
+          <br>
+          <h6>국민은행 00000-00-000000<br>
+          예금주 : ㅇㅇㅇ</h6>
+
+          <div id="minibox1">
+            <h6>※입금자명 불일치시 자동 입금이 확인이 되지 않습니다.</h6>
+          </div>
+          <h6>반품주소지<br>
+          -ㅇㅇ시 ㅇ구  ㅇㅇㅇ대로 000, 1층 순수조명 물류센터</h6>
+          <div id="minibox2">
+            <a href="#"><img src="https://w7.pngwing.com/pngs/405/895/png-transparent-black-box-truck-icon-mover-car-computer-icons-transport-icon-truck-angle-freight-transport-text.png" alt="배송차사진"></a>
+            <h6>내가 주문한 상품 배송조회 바로가기<br>
+            롯데택배 / 1588-0000</h6>
+          </div>
+
+        </div>
+        <div class="box3">
+          <div class="smallmenu">
+           <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/file-text-128.png" alt="주문내역사진"></a>
+           <h5><a href="#">ORDER</a></h5>
+           <h6><a href="#">주문 내역</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/user-128.png" alt="개인정보사진"></a>
+            <h5><a href="#">PROPILE</a></h5>
+            <h6><a href="#">개인정보</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/shopping-cart-128.png" alt="관심상품사진"></a>
+            <h5><a href="#">WISH LIST</a>
+            </h5>
+            <h6><a href="#">관심 상품</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/database-128.png" alt="적립금사진"></a>
+            <h5><a href="#">MILEAGE</a></h5>
+            <h6><a href="#">적립금</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/credit-card-128.png" alt="쿠폰내역사진"></a>
+            <h5><a href="#">COUPON</a></h5>
+            <h6><a href="#">쿠폰 내역</a></h6>
+          </div>
+          <div class="smallmenu">
+            <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/pen-tool-1024.png" alt="내가쓴글사진"></a>
+            <h5><a href="#">MY BOARD</a></h5>
+            <h6><a href="#">내가 쓴 글</a></h6>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="footnav">
+
+        <ul>
+          <li><a href="#">회사소개</a></li>
+          <li>ㅣ</li>
+          <li><a href="#">이용약관</a></li>
+          <li>ㅣ</li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li>ㅣ</li>
+          <li><a href="#">이용안내</a></li>
+        </ul>
+
+      </div>
+
+      <div id="address">
+        <ul>
+          <li>법인형(상호):순수조명</li>
+          <li>ㅣ</li>
+          <li>대표자(성명):ㅇㅇㅇ</li>
+          <li>ㅣ</li>
+          <li>사업자 등록번호 안내:000-00-00000</li>
+          <br>
+          <li>ㅣ</li>
+          <li>통신판매업신고:제000-ㅇㅇㅇ구-0000호[사업자정보확인]</li>
+          <li>ㅣ</li>
+          <li>개인정보보호책임자:ㅇㅇㅇ</li>
+          <br>
+          <li>ㅣ</li>
+          <li>전화번호</li>
+          <li>ㅣ</li>
+          <li>팩스번호</li>
+          <li>ㅣ</li>
+          <li>주소:00000 ㅇㅇ시 ㅇㅇ동 ㅇㅇ로 00 1F,순수조명</li>
+          <br>
+          <li>Copyright © 순수조명. All rights reserved.</li>
+
+        </ul>
+
+        <div id="service">
+          <h5>구매안전(에스크로)서비스</h5>
+          <button>서비스가입사실확인</button><br>
+          <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서<br>
+            가입한 구매안전(에스크로) 서비스를 이용하실수 있습니다.</p>
+
+          <div id="service-img">
+            <a href="#"><img src="https://soonsumall.com/G_design/escrow/KBescrow.png" alt="서비스보호1"></a>
+            <a href="#"><img src="https://soonsumall.com/G_design/escrow/inipay.png" alt="서비스보호2"></a>  
+          </div>
+
+
+          <div id="confirm">
+            <a href="#"><img src="https://soonsumall.com/G_design/escrow/fairTrade.png" alt="인증1" ></a>
+            <a href="#"><img src="http://www.99techpost.com/wp-content/uploads/2018/05/sslcertificate.png" alt="인증2"></a>
+            <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.-GPP8W4XYr09DNyMB4doRwHaCR&pid=Api&P=0" alt="인증3"></a>
+
+          </div>  
+
+
+        </div>
+
+      </div>
+
+
+
+    </footer>
+
+
+  </body>
+</html>

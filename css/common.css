@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+
+      header {
+        width: 100%;
+        height: 270px;
+        margin: 0 auto;
+        
+      }
+
+      #wrap {
+        width: 1260px;
+        height: 40px;
+        
+        margin:0 auto;
+      }
+
+      #login {
+        width: 400px;
+        height: 40px;
+        float: left;
+        display: block;
+      }
+
+      #login> ul a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #login> ul>li {
+        float: left;
+        font-size: 14px;
+        margin: 5px 0 2px 0;
+      }
+
+      #comunity {
+        width: 400px;
+        height: 40px;
+        float:right;
+
+      }
+      #comunity > ul > li {
+        float: right;
+        font-size: 14px;
+        margin: 5px 0 2px 0;
+      }
+      #comunity > ul >li > a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #header-middle{width:1260px; height:110px; margin:0 auto;}
+
+
+      #logo {
+        width: 110px;
+        height: 110px;
+        margin: 50px 350px 0px 500px;
+      }
+
+
+      #search {
+        width: 220px;
+        height: 28px;
+        float: right;
+        margin: -120px 20px 0px 0;
+        border-radius: 20px;
+        border:1px solid #eee;
+        background-color:lightgrey
+      }
+
+      #search > a >img {
+        float: right;
+        margin: 10px 20px 10px 10px;
+      }
+
+      #header-nav {width: 100%; height: 55px;  margin:0 auto; border-bottom:1px solid #eee; border-top:1px solid #eee;}
+
+
+      #header-nav > nav > ul {width:1260px; height:30px; margin:0 auto; padding:0px; }
+
+      #header-nav > nav > ul > li {
+        float:left;
+        font-size: 14px;
+        margin: 10px 25px;
+        }
+
+        #header-nav > nav > ul > li > a {
+        text-decoration: none;
+        color: black; 
+      }
+
+      #header-nav > nav > ul > li >a:hover {
+        color: beige;
+      }
+      
+
+      footer {
+        width: 100%;
+        height: 902px;
+        margin: 0 auto;
+      }
+      
+      /*푸터 문의부분 및 배송정보*/
+      #center {width:1260px; height:430px; float:center; padding:50px 0 50px 0; margin:0 auto; }
+      #center > .box3 {width:380px; height:330px; float:left; padding:10px; color:gray;}
+
+      #center > .box3:first-of-type{margin:10px 5px 10px 25px; }
+      #center > .box3:nth-of-type(2){margin:10px 5px 10px 25px;}
+      #center > .box3:last-of-type{margin:10px 5px 10px 25px;}
+
+      .box3:first-of-type > a  { text-decoration:none; width: 130px; height:60px; background-color:beige; text-align:center;}
+      .box3:first-of-type > a > h6 {width: 160px; height:60px; padding:20px; margin:0 10px 0 10px; float:left; background-color:gray; color:white; display:inline;}
+      
+      #minibox1 {width:317px; height:31px; background-color:lightgray; padding:10px;  margin:10px 0 10px 0;}
+      
+      #minibox2 {width:318px; height:60px; border: 1px solid #eee; padding:5px 0 5px 10px; margin:10px 0 10px 0;}
+      #minibox2 > a > img {width:40px; height:30px; float:left; margin:10px 10px 0 0;}
+      #minibox2 > h6 {margin: 10px 0 0 0;}
+
+      /*주문내역, 개인정보, 관심상품 및 쿠폰 마일리지 부분*/
+
+      .smallmenu{width:94px; height:156px; float:left; text-align:center; border:1px solid #eee;}
+      .smallmenu > a {text-decoration:none;}
+      .smallmenu > a > img {opacity: 0.3; width:32px; height:32px; text-align:center; margin:20px 10px 10px 10px;}
+      .smallmenu > h5 {margin:0px 0 10px 0px;}
+      .smallmenu > h5 > a {text-decoration:none; opacity: 0.3; color:black; font-size:10px; border:1px solid lightgrey;  padding:2px; border-radius:5px;}
+      
+      .smallmenu > h6 > a {text-decoration:none; opacity: 0.3; color:black} 
+
+
+      .box3 > .smallmenu:first-of-type {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(2) {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(3) {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(4) {margin:10px;}
+      .box3 > .smallmenu:nth-of-type(5) {margin:10px;}
+      .box3 > .smallmenu:last-of-type {margin:10px;}
+
+      /*개인정보 처리방침*/
+
+      #footnav {width: 100%; height:20px; margin: 10px 0 10px 0; border-top:1px solid #eee; border-bottom:1px solid #eee; }
+      #footnav > ul {width:1260px;  height:20px; margin:0 auto;}
+      #footnav > ul > li { float:left; font-size:10px; margin:0 auto; }
+      #footnav > ul > li > a {text-decoration:none; color:black;}
+
+      /*회사소개 및 서비스인증내역*/
+
+      #address {width: 1260px; height:90px; margin:0 auto;}
+      #address > ul {float:left; margin:0 auto; text-align:center;}
+      #address > ul >li {float:left; font-size: 8px; }
+
+
+      #service {width:400px; height:45px; float:right; }
+      #service > h5 {font-size:7px; font-weight:bold; float:left;}
+      #service >button {font-size:7px; float:right; margin:-3px 120px 3px 0px;}
+      #service > p {font-size:5px; float:left; margin:-5px 0  5px 0;}
+      #service > #service-img {width:100px; height:45px; float:right; margin:-20px 0 0 0;}
+      #service > #service-img > a > img {width:47px; height:45px; float:left; opacity:0.4;}
+
+      #confirm {width:300px; height:30px; float:right; display:block;}
+      #confirm > a > img {float:left; width:100px; height:90%; opacity:0.4;}
+      
+      
+
+
